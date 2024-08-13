@@ -1,0 +1,94 @@
+<!--
+    Crie uma página HTML com um parágrafo. Utilize JavaScript para manipular o estilo do parágrafo ao clicar em um botão.
+-->
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+    <style>
+        body{
+            background: rgba(255, 255, 35, 0.425);
+            font: normal 18pt Arial;
+        }
+
+        div{
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            display: inline-block;
+            text-align: center;
+            line-height: 150px;
+        }
+        #blue {
+            background-color: white;
+            color: blue;
+        }
+        #red {
+            background-color: white;
+            color: red;
+        }
+        #bolder {
+            background-color: white;
+            font-weight: bolder;
+        }
+        #italic {
+            background-color: white;
+            font-style: italic;
+        }
+        #reset {
+            width: 600px;
+            height: 150px;
+            line-height: 150px;
+            margin-left: 10px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manipulando o parágrafo!</h1>
+    <p id="par">Você pode mudar o estilo do parágrafo clicando nos botões abaixo.</p>
+    <div id="blue">Azul</div>
+    <div id="red">Vermelho</div>
+    <div id="bolder">Negrito</div>
+    <div id="italic">Itálico</div> <br>
+    <div id="reset">Resetar</div>
+
+    <script>
+        // Variáveis
+        var p = document.getElementById('par')
+        var blue = document.getElementById('blue')
+        var red = document.getElementById('red')
+        var bolder = document.getElementById('bolder')
+        var italic = document.getElementById('italic')
+        var reset = document.getElementById('reset')
+
+        // Eventos
+        blue.addEventListener('click', letraAzul)
+        red.addEventListener('click', letraVermelha)
+        bolder.addEventListener('click', letraNegrito)
+        italic.addEventListener('click', letraItalico)
+        reset.addEventListener('click', resetar)
+
+        // Funções
+        function letraAzul(){
+            p.style.color = 'blue'
+        }
+        function letraVermelha(){
+            p.style.color = 'red'
+        }
+        function letraNegrito(){
+            p.style.fontWeight = 'bolder'
+        }
+        function letraItalico(){
+            p.style.fontStyle = 'italic'
+        }
+        function resetar(){
+            p.style.color = 'black'
+            p.style.fontWeight = 'normal'
+            p.style.fontStyle = 'normal'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!--    Cálculo de idade
+    Desenvolva uma página que permita ao usuário digitar seu ano de nascimento em um campo de texto. Ao clicar em um botão, a página deve calcular e mostrar a idade do usuário.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Idade</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calcule sua idade!</h1>
+    <p>Insira abaixo seu ano de nascimento:</p>
+    <input type="number" name="anoNasc" id="anoNasc">
+    <input type="button" value="Calcular" onclick="calcular()">
+    <p id="res"></p>
+
+    <script>
+        function calcular(){
+            // Declaração de variáveis: 
+            var anoNasc = document.getElementById('anoNasc')
+            var anoAtual = new Date()
+
+            var anoAtual = anoAtual.getFullYear() // Guardando o ano atual;
+            var anoNasc = Number(anoNasc.value) // Transformando o valor recebido em tipo number;
+            
+            var idade = anoAtual - anoNasc // Calculando a idade;
+
+            var res = document.getElementById('res')
+            res.innerHTML = `Você tem <strong>${idade}</strong> anos` // Retornando o resultado;
+        }
+    </script>
+</body>
+</html>
