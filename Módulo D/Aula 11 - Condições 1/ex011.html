@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>País</title>
 </head>
 <body>
+    Informe seu país: <input type="text" name="pais" id="pais">
+    <input type="button" value="Enter" onclick='enter()'>
+    <div id="res"></div>
+
+    <script>
+        function enter(){
+            // Declaração de variáveis
+            var paisInput = document.getElementById('pais') 
+            var pais = paisInput.value.toLocaleUpperCase() // A variável 'pais' recebe o valor de paisInput. Isso evita a repetição de 'pais.value' diversas vezes.
+            
+            var res = document.querySelector('div#res')
     
+            res.innerHTML = `<p>Você nasceu em <strong>${pais}!</strong></p>`
+
+            if (pais != 'BRASIL' && pais != 'BRAZIL'){
+                res.innerHTML += `<p>Você é <strong>ESTRANGEIRO!</strong></p>`
+            } else{
+                res.innerHTML += `<p>Você é <strong>BRASILEIRO!</strong></p>`
+            }
+        }
+    </script>
 </body>
 </html>
