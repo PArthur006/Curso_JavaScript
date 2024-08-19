@@ -14,7 +14,7 @@ section{
     max-width: 500px;
     margin: auto;
     color: black;
-    box-shadow: 3px 3px 10px rgba(0, 0, 139, 0.541);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     height: 18em;
     font-weight: bold;
