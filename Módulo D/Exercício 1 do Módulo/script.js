@@ -5,7 +5,7 @@ var minutos = agora.getMinutes()
 var txt = document.getElementById('txt')
 var corpo = document.body
 var img = document.querySelector('div#img img')
-txt.innerHTML = `Agora são ${horaAtual}:${minutos}`
+txt.innerHTML = `Agora são ${horaAtual.toString().padStart(2, '0')}:${minutos.toString().padStart(2, '0')}`
 
 if (horaAtual >= 12 && horaAtual < 18){
     txt.innerHTML += `<br>Boa Tarde!`
