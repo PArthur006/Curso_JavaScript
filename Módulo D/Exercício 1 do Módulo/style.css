@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-    background-color: rgba(0, 132, 255, 0.712);
+    background-color: rgb(240, 227, 158);
     color: white;
     text-align: center;
     font: normal 15pt Arial;
@@ -11,14 +11,18 @@ section{
     background-color: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    max-width: 500px;
     margin: auto;
     color: black;
     box-shadow: 3px 3px 10px rgba(0, 0, 139, 0.541);
-
-
-    text-align: left;
+    text-align: center;
     height: 18em;
+    font-weight: bold;
+}
+
+div#img{
+    margin-top: 40px;
+
 }
 
 footer{
