@@ -13,15 +13,26 @@
     </header>
     <section>
         <div>
-            Testando...
+            <p>Ano de Nascimento:
+                <input type="number" name="Ano" id="Ano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="Sexo" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="Sexo" id="fem">
+                <label for="mas">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
 
-        <div>
-            Olá!
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
         </div>
     </section>
     <footer>
-        <p>&copy; ©CursoemVídeo</p>
+        <p>&copy;CursoemVídeo</p>
     </footer>
 
     <script src="script.js"></script>
