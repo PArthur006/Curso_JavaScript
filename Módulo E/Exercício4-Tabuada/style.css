@@ -21,6 +21,10 @@ section{
     height: 18em;
 }
 
+#central{
+    text-align: center;
+}
+
 footer{
     font-style: italic;
 }
