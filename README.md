@@ -54,9 +54,9 @@ Este repositório contém os arquivos e anotações das aulas do **Curso de Java
 - [x] Módulo A: Conhecendo o JavaScript
 - [x] Módulo B: Comandos básicos no JavaScript
 - [x] Módulo C: Entendendo o DOM
-- [ ] Módulo D: Condições em JavaScript
-- [ ] Módulo E: Repetições em JavaScript
-- [ ] Módulo F: Avançando os estudos em JavaScript
+- [x] Módulo D: Condições em JavaScript
+- [x] Módulo E: Repetições em JavaScript
+- [x] Módulo F: Avançando os estudos em JavaScript
 
 ## Tecnologias Utilizadas
 
