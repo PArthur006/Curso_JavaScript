@@ -1,26 +1,30 @@
 @charset "UTF-8";
 
 body{
-    background-color: rgba(0, 132, 255, 0.712);
-    color: white;
-    text-align: center;
+    background: rgba(0, 132, 255, 0.712);
     font: normal 15pt Arial;
 }
 
+header{
+    color: white;
+    text-align: center;
+}
+
 section{
-    background-color: white;
+    background: white;
     border-radius: 10px;
-    padding: 15px;
+    padding: 15px;    
     width: 500px;
     margin: auto;
-    color: black;
     box-shadow: 3px 3px 10px rgba(0, 0, 139, 0.541);
+}
 
-
-    text-align: left;
-    height: 18em;
+#lista{
+    width: 150px;
 }
 
 footer{
+    color: white;
+    text-align: center;
     font-style: italic;
 }
